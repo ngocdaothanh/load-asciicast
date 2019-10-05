@@ -1,4 +1,4 @@
-(defproject loadasciicast "1.0.0"
+(defproject loadasciicast "2.0.0"
   :description "load asciinema asciicast data"
   :url "https://github.com/marionebl/load-asciicast"
   :license {:name "MIT"
