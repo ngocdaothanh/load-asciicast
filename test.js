@@ -96,4 +96,8 @@ test('inits with fps option', async t => {
   const chars = Array.from(line);
   const codes = chars.map(c => c.charCodeAt(0));
   codes.forEach((c, i) => t.is(actualLine[i][0], c));
+
+  // With higher fps, the frames should be separated
+  const actual10 = await load(data, {fps: 10});
+  t.is(actual10.frames.length, 3);
 });
